@@ -1,7 +1,7 @@
 import "./Header.css";
+import CartButton from "./CartButton";
 
 const Header = () => {
-  const items = 2;
   return (
     <header>
       <nav className="header-nav">
@@ -10,7 +10,7 @@ const Header = () => {
             <h1>Redux Shopping App</h1>
           </li>
           <li>
-            <h3>Cart: {items} items</h3>
+            <CartButton />
           </li>
         </ul>
       </nav>

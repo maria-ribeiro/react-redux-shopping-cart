@@ -2,34 +2,49 @@ import Product from "./Product";
 import "./Products.css";
 
 const Products = () => {
-  const products = [
+  const PRODUCTS = [
     {
-      name: "Harry Potter and the Sorceror's Stone",
-      price: "8€",
+      id: 1,
+      name: "Harry Potter and the Sorcerer's Stone",
+      price: 6,
     },
     {
-      name: "Harry Potter and the Sorceror's Stone",
-      price: "8€",
+      id: 2,
+      name: "Harry Potter and the Chamber of Secrets",
+      price: 6,
     },
     {
-      name: "Harry Potter and the Sorceror's Stone",
-      price: "8€",
+      id: 3,
+      name: "Harry Potter and the Prisioner of Azkaban",
+      price: 6,
     },
     {
-      name: "Harry Potter and the Sorceror's Stone",
-      price: "8€",
+      id: 4,
+      name: "Harry Potter and the Goblet of Fire",
+      price: 8,
     },
     {
-      name: "Harry Potter and the Sorceror's Stone",
-      price: "8€",
+      id: 5,
+      name: "Harry Potter and the Order of the Phoenix",
+      price: 8,
+    },
+    {
+      id: 6,
+      name: "Harry Potter and the Half-Blood Prince",
+      price: 8,
+    },
+    {
+      id: 7,
+      name: "Harry Potter and the Deathly Hallows",
+      price: 10,
     },
   ];
   return (
     <div className="products">
       <ul className="products-ul">
-        {products.map((product) => (
-          <li className="products-li">
-            <Product name={product.name} price={product.price} />
+        {PRODUCTS.map((product) => (
+          <li key={product.id} className="products-li">
+            <Product product={product} />
           </li>
         ))}
       </ul>
