@@ -1,5 +1,7 @@
 .header-nav {
-  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   background-color: rgb(88, 101, 242);
   color: #eee;

@@ -9,17 +9,17 @@
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   outline: none;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   padding: 2px 16px;
-  height: 32px;
+  height: 42px;
   min-width: 60px;
-  min-height: 32px;
   border: none;
   color: #fff;
   background-color: rgb(88, 101, 242);

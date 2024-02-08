@@ -35,6 +35,6 @@
   padding: 0.8rem;
 }
 
-button {
-  /* margin-top: 2rem; */
+.login-button {
+  margin-top: 2rem;
 }

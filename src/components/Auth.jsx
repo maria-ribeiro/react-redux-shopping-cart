@@ -1,6 +1,6 @@
+import { useDispatch } from "react-redux";
 import { login } from "../store/authSlice";
 import "./Auth.css";
-import { useDispatch } from "react-redux";
 
 const Auth = () => {
   const dispatch = useDispatch();
@@ -32,7 +32,7 @@ const Auth = () => {
             name="password"
             id="password"
           />
-          <button className="button" type="submit">
+          <button className="button login-button" type="submit">
             Login
           </button>
         </form>
