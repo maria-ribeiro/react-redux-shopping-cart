@@ -1,0 +1,13 @@
+.header-nav {
+  position: sticky;
+  padding: 1rem;
+  background-color: rgb(88, 101, 242);
+  color: #eee;
+}
+
+.header-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
