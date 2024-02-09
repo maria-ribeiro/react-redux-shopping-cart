@@ -9,7 +9,7 @@ const cartSlice = createSlice({
       state.quantity = action.payload.quantity;
       state.changed = false;
     },
-    resetData: (state, action) => {
+    resetData: (state) => {
       state.items = [];
       state.quantity = 0;
       state.changed = true;
