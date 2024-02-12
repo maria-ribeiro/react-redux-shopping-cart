@@ -5,7 +5,7 @@ const cartSlice = createSlice({
   initialState: { items: [], quantity: 0, show: false, changed: false },
   reducers: {
     updateData: (state, action) => {
-      state.items = action.payload.items;
+      state.items = action.payload.items ? action.payload.items : [];
       state.quantity = action.payload.quantity;
       state.changed = false;
     },
