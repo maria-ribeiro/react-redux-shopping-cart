@@ -1,0 +1,26 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: calc(100vh - 68px);
+  padding: 2rem;
+  background-color: #eee;
+}
+
+.cart-ul {
+  list-style-type: none;
+}
+
+.cart-item {
+  padding: 0.6rem;
+  list-style-type: none;
+}
+
+.cart-empty {
+  padding: 0.8rem;
+}
+
+.cart-quantity {
+  margin: 0.2rem;
+}

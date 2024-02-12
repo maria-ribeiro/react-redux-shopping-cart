@@ -11,14 +11,14 @@ const CartItem = ({ item }) => {
     dispatch(removeFromCart(id));
   };
   return (
-    <ul>
-      <li>Item: {name}</li>
+    <ul className="cart-item">
+      <li>{name}</li>
       <li>
         <button onClick={decreaseQuantity}>-</button>
-        Quantity: {quantity}
+        <span className="cart-quantity">{quantity}</span>
         <button onClick={increaseQuantity}>+</button>
       </li>
-      <li>Price: {totalPrice}€</li>
+      <li>{totalPrice}€</li>
     </ul>
   );
 };

@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Products from "./Products";
 import Cart from "./Cart";
-import Order from "./Order";
+import "./Layout.css";
 import { useSelector } from "react-redux";
 
 const Layout = () => {
@@ -10,9 +10,10 @@ const Layout = () => {
   return (
     <div>
       <Header />
-      <Products />
-      {showCart && <Cart />}
-      <Order />
+      <div className="layout-main">
+        <Products />
+        {showCart && <Cart />}
+      </div>
     </div>
   );
 };
